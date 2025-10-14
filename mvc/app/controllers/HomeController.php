@@ -13,6 +13,10 @@ class HomeController{
         return $this->view("calendario");
     }
 
+    public function contacto() {
+        return $this->view('contacto');
+    }
+
     public function mostrarPersonas() {
         $pers = new Persona();
         $personas = $pers->seleccionar();

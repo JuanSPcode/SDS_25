@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head><?php include 'components/header.php'?></head>
+<body class="h-full flex flex-col">
+    <!-- Navbar fijo arriba -->
+    <nav class="flex-shrink-0">
+        <?php include 'components/nav.php'; ?>
+    </nav>
+
+    <!-- Main content que crece para empujar el footer -->
+    <div class="flex-grow">
+
+    </div>
+
+    <!-- Footer al final -->
+    <footer class="flex-shrink-0">
+        <?php include 'components/footer.php'?>
+    </footer>
+</body>
+</html>

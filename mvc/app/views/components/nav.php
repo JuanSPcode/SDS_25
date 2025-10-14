@@ -1,8 +1,8 @@
 <nav class="bg-white border-gray-200 dark:bg-[rgb(52,73,108)] dark:border-balck">
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-    <a href="../public/" class="flex items-center space-x-3 rtl:space-x-reverse">
+    <a href="../public/" class="flex items-center space-x-3 rtl:space-x-reverse hover:text-blue-600">
         <img src="./img/logo.png" class="h-8" alt="ASEIS Logo">
-        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white hover:text-blue-600">ASEIS</span>
+        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white ">ASEIS</span>
     </a>
     <button data-collapse-toggle="navbar-dropdown" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-dropdown" aria-expanded="false">
         <span class="sr-only">Open main menu</span>
@@ -13,7 +13,7 @@
     <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
       <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-[rgb(106,135,183)] md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0   md:dark:bg-[rgb(52,73,108)] dark:border-gray-700">
         <li>
-          <a href="#" class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-white md:p-0 md:dark:text-white md:hover:text-blue-600 dark:dark:bg-[rgb(52,73,108)]md:dark:bg-transparent" aria-current="page">Evento</a>
+          <a href="../public/calendario" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Calentario ASEIS</a>
         </li>
         <li>
             <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Calendario
@@ -46,7 +46,7 @@
             </div>
         </li>
         <li>
-          <a href="../public/calendario" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Calentario ASEIS</a>
+          <a href="../public/contacto" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contacto</a>
         </li>
 
       </ul>
