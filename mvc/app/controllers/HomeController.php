@@ -17,6 +17,31 @@ class HomeController{
         return $this->view('contacto');
     }
 
+    # MOSTRANDO EL DIA A DIA
+    public function lunes() {
+        return $this->view('dias', ["lunes"=>"lunes"]);
+    }
+
+    public function martes() {
+        return $this->view('dias', ["martes"=>"martes"]);
+    }
+    public function miercoles() {
+        return $this->view('dias', ["miercoles"=>"miercoles"]);
+    }
+
+    public function jueves() {
+        return $this->view('dias', ["jueves"=>"jueves"]);
+    }
+
+    public function viernes() {
+        return $this->view('dias', ["viernes"=>"viernes"]);
+    }
+
+    public function todo() {
+        return $this->view('dias', ["lunes"=>"lunes", "martes"=>"martes","miercoles"=>"miercoles","jueves"=>"jueves","viernes"=>"viernes"]);
+    }
+
+
     public function mostrarPersonas() {
         $pers = new Persona();
         $personas = $pers->seleccionar();
