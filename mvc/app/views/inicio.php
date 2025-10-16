@@ -221,15 +221,15 @@
             <!-- Call to Action - Registro de Visitas -->
             <div class="card bg-gradient-to-bl from-gray-200 to-gray-800  text-primary-content shadow-xl ">
                 <div class="card-body items-center text-center">
-                    <h2 class="card-title text-3xl mb-4">¿Te gustó el contenido?</h2>
-                    <p class="text-lg mb-6">Regístrate como visitante de nuestro blog y mantente informado sobre la Semana de Sistemas</p>
+                    <h2 class="card-title text-3xl mb-4 text-white">¿Te gustó el contenido?</h2>
+                    <p class="text-lg mb-6 text-white/90">Regístrate como visitante de nuestro blog y mantente informado sobre la Semana de Sistemas</p>
                     <div class="card-actions">
-                        <a href="/registro-visitas" class="btn btn-secondary btn-lg">
+                        <button class="btn-registrar-modal btn btn-secondary btn-lg">
                             Registrar mi visita
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
                             </svg>
-                        </a>
+                        </button>
                     </div>
                 </div>
             </div>

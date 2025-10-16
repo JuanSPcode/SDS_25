@@ -171,67 +171,9 @@
                         </div>
                     </div>
 
-                    <div class="divider"></div>
 
-                    <!-- Formulario de registro de visitas -->
-                    <div class="bg-base-200 rounded-lg p-6">
-                        <h3 class="text-2xl font-bold text-base-content mb-4 flex items-center gap-2">
-                            <i class="fas fa-user-plus text-primary"></i>
-                            Registra tu visita
-                        </h3>
-                        
-                        <?php
-                        // Verificar si el usuario ya está registrado
-                        $visitaModel = new \app\models\Visita();
-                        $usuarioActual = $visitaModel->getUsuarioActual();
-                        
-                        if ($usuarioActual): ?>
-                            <!-- Usuario ya registrado -->
-                            <div class="alert alert-success">
-                                <i class="fas fa-check-circle text-2xl"></i>
-                                <div>
-                                    <h4 class="font-bold">¡Bienvenido de nuevo, <?php echo htmlspecialchars($usuarioActual['nombre']); ?>!</h4>
-                                    <p class="text-sm">Has visitado esta página <strong><?php echo $usuarioActual['visitas']; ?></strong> veces.</p>
-                                    <p class="text-xs mt-1">Primera visita: <?php echo date('d/m/Y H:i', strtotime($usuarioActual['f_registro'])); ?></p>
-                                </div>
-                            </div>
-                        <?php else: ?>
-                            <!-- Mostrar mensajes de error si existen -->
-                            <?php if (!empty($mensajeError)): ?>
-                                <div class="alert alert-error mb-4">
-                                    <i class="fas fa-exclamation-circle"></i>
-                                    <span><?php echo htmlspecialchars($mensajeError); ?></span>
-                                </div>
-                            <?php endif; ?>
-                            
-                            <!-- Formulario de registro -->
-                            <form method="POST" action="/mvc/public/contacto" class="space-y-4">
-                                <div class="form-control">
-                                    <label class="label">
-                                        <span class="label-text font-semibold">
-                                            <i class="fas fa-signature mr-2"></i>
-                                            Tu nombre
-                                        </span>
-                                    </label>
-                                    <input type="text" 
-                                           name="nombre_visitante" 
-                                           placeholder="Ingresa tu nombre" 
-                                           class="input input-bordered input-primary w-full" 
-                                           required 
-                                           minlength="2"
-                                           maxlength="100" />
-                                    <label class="label">
-                                        <span class="label-text-alt">Este nombre se usará para identificarte en futuras visitas</span>
-                                    </label>
-                                </div>
-                                
-                                <button type="submit" name="registrar_visita" class="btn btn-primary w-full">
-                                    <i class="fas fa-check mr-2"></i>
-                                    Registrar mi visita
-                                </button>
-                            </form>
-                        <?php endif; ?>
-                    </div>
+
+                   
 
                     <div class="divider"></div>
 
