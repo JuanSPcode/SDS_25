@@ -17,6 +17,44 @@ class HomeController{
         return $this->view('contacto');
     }
 
+    public function agregarusuario() {
+        // Procesar el formulario ANTES de cualquier HTML
+        $mensajeExito = '';
+        $mensajeError = '';
+
+        if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['registrar_visita'])) {
+            require_once __DIR__ . '/../../autoloader.php';
+            
+            $nombre = isset($_POST['nombre_visitante']) ? trim($_POST['nombre_visitante']) : '';
+            
+            if (!empty($nombre)) {
+                try {
+                    $visitaModelForm = new \app\models\Visita();
+                    $idUsuario = $visitaModelForm->registrarUsuario($nombre);
+                    
+                    if ($idUsuario) {
+                        // Redirigir para evitar reenvío del formulario
+                        header('Location: ' . $_SERVER['REQUEST_URI']);
+                        exit;
+                    } else {
+                        $mensajeError = 'Error al registrar tu visita. El nombre ya está en uso o hay un problema con la base de datos.';
+                    }
+                } catch (\Exception $e) {
+                    $mensajeError = 'Error: ' . $e->getMessage();
+                }
+            } else {
+                $mensajeError = 'Por favor ingresa tu nombre.';
+            }
+        }
+
+        return $this->view('contacto', ["mensajeError"=>$mensajeError]);
+
+    }
+
+    public function estadisticas() {
+        return $this->view('estadisticas');
+    }
+
     # MOSTRANDO EL DIA A DIA
     public function lunes() {
         return $this->view('dias', ["lunes"=>"lunes"]);
