@@ -16,6 +16,11 @@
         *{
             font-family: "Montserrat", sans-serif;
         }
+        
+        /* Gradiente radial para efectos de aura */
+        .bg-gradient-radial {
+            background: radial-gradient(circle, var(--tw-gradient-stops));
+        }
     </style>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
     <title><?php echo isset($title) ? $title : "SDS 25"; ?></title>

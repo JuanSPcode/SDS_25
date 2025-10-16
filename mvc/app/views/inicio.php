@@ -7,6 +7,9 @@
         <?php include 'components/nav.php'; ?>
     </nav>
 
+    <!-- Espaciador para compensar navbar fijo -->
+    <div class="my-8"></div>
+
     <!-- Main content que crece para empujar el footer -->
     <div class="flex-grow bg-base-200">
         <main class="container mx-auto px-4 py-8 ">
@@ -124,7 +127,7 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     
                     <!-- Día 1 - Lunes -->
-                    <a href="/lunes" class="card bg-gradient-to-br from-blue-500 to-blue-700 text-white shadow-xl hover:shadow-2xl transition-all hover:scale-105">
+                    <a href="../public/lunes" class="card bg-gradient-to-br from-blue-500 to-blue-700 text-white shadow-xl hover:shadow-2xl transition-all hover:scale-105">
                         <div class="card-body">
                             <div class="flex items-center justify-between mb-2">
                                 <h2 class="card-title text-2xl">Lunes 13</h2>
@@ -139,7 +142,7 @@
                     </a>
 
                     <!-- Día 2 - Martes -->
-                    <a href="/martes" class="card bg-gradient-to-br from-green-500 to-green-700 text-white shadow-xl hover:shadow-2xl transition-all hover:scale-105">
+                    <a href="../public/martes" class="card bg-gradient-to-br from-green-500 to-green-700 text-white shadow-xl hover:shadow-2xl transition-all hover:scale-105">
                         <div class="card-body">
                             <div class="flex items-center justify-between mb-2">
                                 <h2 class="card-title text-2xl">Martes 14</h2>
@@ -154,7 +157,7 @@
                     </a>
 
                     <!-- Día 3 - Miércoles -->
-                    <a href="/miercoles" class="card bg-gradient-to-br from-purple-500 to-purple-700 text-white shadow-xl hover:shadow-2xl transition-all hover:scale-105">
+                    <a href="../public/miercoles" class="card bg-gradient-to-br from-purple-500 to-purple-700 text-white shadow-xl hover:shadow-2xl transition-all hover:scale-105">
                         <div class="card-body">
                             <div class="flex items-center justify-between mb-2">
                                 <h2 class="card-title text-2xl">Miércoles 15</h2>
@@ -169,7 +172,7 @@
                     </a>
 
                     <!-- Día 4 - Jueves -->
-                    <a href="/jueves" class="card bg-gradient-to-br from-orange-500 to-orange-700 text-white shadow-xl hover:shadow-2xl transition-all hover:scale-105">
+                    <a href="../public/jueves" class="card bg-gradient-to-br from-orange-500 to-orange-700 text-white shadow-xl hover:shadow-2xl transition-all hover:scale-105">
                         <div class="card-body">
                             <div class="flex items-center justify-between mb-2">
                                 <h2 class="card-title text-2xl">Jueves 16</h2>
@@ -184,7 +187,7 @@
                     </a>
 
                     <!-- Día 5 - Viernes -->
-                    <a href="/viernes" class="card bg-gradient-to-br from-red-500 to-red-700 text-white shadow-xl hover:shadow-2xl transition-all hover:scale-105">
+                    <a href="../public/viernes" class="card bg-gradient-to-br from-red-500 to-red-700 text-white shadow-xl hover:shadow-2xl transition-all hover:scale-105">
                         <div class="card-body">
                             <div class="flex items-center justify-between mb-2">
                                 <h2 class="card-title text-2xl">Viernes 17</h2>
@@ -199,10 +202,10 @@
                     </a>
 
                     <!-- Mi Información -->
-                    <a href="/mi-informacion" class="card bg-gradient-to-br from-gray-700 to-gray-900 text-white shadow-xl hover:shadow-2xl transition-all hover:scale-105">
+                    <a href="../public/contacto" class="card bg-gradient-to-br from-gray-700 to-gray-900 text-white shadow-xl hover:shadow-2xl transition-all hover:scale-105">
                         <div class="card-body">
                             <div class="flex items-center justify-between mb-2">
-                                <h2 class="card-title text-2xl">Autor</h2>
+                                <h2 class="card-title text-2xl">juanSPcode</h2>
                                 <div class="badge badge-lg bg-white text-gray-700">Info</div>
                             </div>
                             <p class="text-white/90">Conoce un poco sobre quien soy yo </p>

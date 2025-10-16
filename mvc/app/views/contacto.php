@@ -7,6 +7,9 @@
         <?php include 'components/nav.php'; ?>
     </nav>
 
+    <!-- Espaciador para compensar navbar fijo -->
+    <div class="my-8"></div>
+
     <!-- Main content que crece para empujar el footer -->
     <div class="flex-grow bg-base-200">
         

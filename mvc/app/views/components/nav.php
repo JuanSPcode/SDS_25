@@ -1,4 +1,4 @@
-<nav class="bg-white border-gray-200 dark:bg-[rgb(52,73,108)] dark:border-balck">
+<nav class="bg-white border-gray-200 dark:bg-[rgb(52,73,108)] dark:border-balck fixed top-0 left-0 right-0 z-50 shadow-md">
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
     <a href="../public/" class="flex items-center space-x-3 rtl:space-x-reverse hover:text-blue-600">
         <img src="./img/logo.png" class="h-8" alt="ASEIS Logo">
