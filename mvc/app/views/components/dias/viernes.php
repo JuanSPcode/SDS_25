@@ -143,60 +143,22 @@
                         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                             <div class="text-center text-base-content/60">
                                 <div class="overflow-hidden rounded-lg hover:scale-105 transition-all duration-300 h-48">
-                                    <img src="./img/viernes/bingo-juego-1.jpg" class="w-full h-full object-cover" alt="Bingo en juego 1">
+                                    <img src="./img/viernes/IMG_3374.jpeg" class="w-full h-full object-cover" alt="Bingo en juego 1">
                                 </div>
-                                <p class="text-sm mt-2">Sistema en acción</p>
                             </div>
                             <div class="text-center text-base-content/60">
                                 <div class="overflow-hidden rounded-lg hover:scale-105 transition-all duration-300 h-48">
-                                    <img src="./img/viernes/bingo-juego-2.jpg" class="w-full h-full object-cover" alt="Bingo en juego 2">
+                                    <img src="./img/viernes/IMG_3383.jpeg" class="w-full h-full object-cover" alt="Bingo en juego 2">
                                 </div>
-                                <p class="text-sm mt-2">Participantes jugando</p>
                             </div>
                             <div class="text-center text-base-content/60">
                                 <div class="overflow-hidden rounded-lg hover:scale-105 transition-all duration-300 h-48">
-                                    <img src="./img/viernes/bingo-juego-3.jpg" class="w-full h-full object-cover" alt="Bingo en juego 3">
+                                    <img src="./img/viernes/IMG_3384.jpeg" class="w-full h-full object-cover" alt="Bingo en juego 3">
                                 </div>
-                                <p class="text-sm mt-2">Cartones digitales</p>
                             </div>
                         </div>
 
-                        <!-- Premios del Bingo -->
-                        <div class="alert alert-success mt-6">
-                            <i class="fas fa-gift text-2xl"></i>
-                            <div>
-                                <p class="font-bold">Premios Increíbles</p>
-                                <p class="text-sm">
-                                    Hubo muchos premios como <strong>bocinas</strong>, <strong>camisas</strong> y más. 
-                                    ¡Muchos ganadores felices llevándose sus recompensas!
-                                </p>
-                            </div>
-                        </div>
 
-                        <div class="divider">
-                            <i class="fas fa-trophy mr-2"></i>
-                            Galeria de fotos
-                        </div>
-                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                            <div class="text-center text-base-content/60">
-                                <div class="overflow-hidden rounded-lg hover:scale-105 transition-all duration-300 h-48">
-                                    <img src="./img/viernes/bingo-ganador-1.jpg" class="w-full h-full object-cover" alt="Ganador Bingo 1">
-                                </div>
-                                <p class="text-sm mt-2">¡Primer ganador!</p>
-                            </div>
-                            <div class="text-center text-base-content/60">
-                                <div class="overflow-hidden rounded-lg hover:scale-105 transition-all duration-300 h-48">
-                                    <img src="./img/viernes/bingo-ganador-2.jpg" class="w-full h-full object-cover" alt="Ganador Bingo 2">
-                                </div>
-                                <p class="text-sm mt-2">Entrega de premios</p>
-                            </div>
-                            <div class="text-center text-base-content/60">
-                                <div class="overflow-hidden rounded-lg hover:scale-105 transition-all duration-300 h-48">
-                                    <img src="./img/viernes/bingo-ganador-3.jpg" class="w-full h-full object-cover" alt="Ganador Bingo 3">
-                                </div>
-                                <p class="text-sm mt-2">Celebración de ganadores</p>
-                            </div>
-                        </div>
                     </div>
                 </div>
 
@@ -282,16 +244,14 @@
                         </div>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <div class="text-center text-base-content/60">
-                                <div class="overflow-hidden rounded-lg hover:scale-105 transition-all duration-300 h-60">
-                                    <img src="./img/viernes/clash-1.jpg" class="w-full h-full object-cover" alt="Torneo Clash 1">
+                                <div class="overflow-hidden rounded-lg hover:scale-105 transition-all duration-300 h-64">
+                                    <img src="./img/viernes/IMG_3385.jpeg" class="w-full h-full object-cover" alt="Torneo Clash 1">
                                 </div>
-                                <p class="text-sm mt-2">Competidores concentrados</p>
                             </div>
                             <div class="text-center text-base-content/60">
-                                <div class="overflow-hidden rounded-lg hover:scale-105 transition-all duration-300 h-60">
-                                    <img src="./img/viernes/clash-2.jpg" class="w-full h-full object-cover" alt="Torneo Clash 2">
+                                <div class="overflow-hidden rounded-lg hover:scale-105 transition-all duration-300 h-64">
+                                    <img src="./img/viernes/IMG_3386.jpeg" class="w-full h-full object-cover" alt="Torneo Clash 2">
                                 </div>
-                                <p class="text-sm mt-2">Batallas intensas</p>
                             </div>
                         </div>
                     </div>
@@ -325,35 +285,6 @@
                         </div>
 
 
-
-                        <div class="divider divider-neutral my-6"></div>
-
-                        <!-- Galería de la fiesta -->
-                        <h3 class="text-2xl font-bold mb-4 flex items-center gap-2">
-                            <i class="fas fa-camera"></i>
-                            Momentos de la Fiesta
-                        </h3>
-                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                            <div class="text-center">
-                                <div class="overflow-hidden rounded-lg hover:scale-105 transition-all duration-300 h-48 bg-white/10">
-                                    <img src="./img/viernes/fiesta-1.jpg" class="w-full h-full object-cover" alt="Fiesta 1">
-                                </div>
-                                <p class="text-sm mt-2 opacity-90">Ambiente de la fiesta</p>
-                            </div>
-                            <div class="text-center">
-                                <div class="overflow-hidden rounded-lg hover:scale-105 transition-all duration-300 h-48 bg-white/10">
-                                    <img src="./img/viernes/fiesta-2.jpg" class="w-full h-full object-cover" alt="Fiesta 2">
-                                </div>
-                                <p class="text-sm mt-2 opacity-90">Estudiantes bailando</p>
-                            </div>
-                            <div class="text-center">
-                                <div class="overflow-hidden rounded-lg hover:scale-105 transition-all duration-300 h-48 bg-white/10">
-                                    <img src="./img/viernes/fiesta-3.jpg" class="w-full h-full object-cover" alt="Fiesta 3">
-                                </div>
-                                <p class="text-sm mt-2 opacity-90">Noche inolvidable</p>
-                            </div>
-                        </div>
-
                         <!-- Mensaje especial -->
                         <div class="alert bg-white/10 backdrop-blur border-white/20 mt-6">
                             <i class="fas fa-heart text-3xl text-pink-300"></i>
@@ -365,24 +296,6 @@
                                     ¡Así termina la Semana de Sistemas 2025! 🎊
                                 </p>
                             </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Reflexión Final -->
-                <div class="card bg-base-100 shadow-xl">
-                    <div class="card-body">
-                        <h2 class="text-3xl font-bold mb-4 flex items-center gap-2">
-                            <i class="fas fa-flag-checkered text-success"></i>
-                            Cierre de la Semana de Sistemas 2025
-                        </h2>
-                        <div class="prose max-w-none">
-                            <p class="text-lg leading-relaxed">
-                                El viernes marcó el final de una semana extraordinaria. Desde el <strong>Bingo Digital</strong> 
-                                desarrollado por nuestros compañeros, pasando por el emocionante <strong>Torneo de Clash Royale</strong>, 
-                                hasta culminar con una <strong>fiesta de clausura</strong>.
-                            </p>
-
                         </div>
                     </div>
                 </div>

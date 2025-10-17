@@ -1,6 +1,12 @@
 
 # SDS 25 
 
+>[!NOTE]
+> Para poder ver el registro de usuario debe de abrir el proyecto
+> en diferentes navegadores o en modo incógnito para que se
+> registre una nueva visita. Y se registran las visitas pero
+> tambien los usuarios
+
 ## Descripción General
 
 Proyecto web para registrar y analizar visitas de usuarios anónimos y registrados, asegurando privacidad y anonimato.
@@ -31,8 +37,8 @@ Esta sección permite visualizar el calendario de SDS25.
 - Página del calendario blog: `http://localhost:8081/mvc/public/calendario_blog`
 <img style="max-width: 100%;" src="mvc/public/img/docs/03.png"/>
 
-> .[!NOTE].
-> Para poder ver las demas vista despliega el dropdown que esta en el navbar o desliza hasta abajo de la pagina principal.
+> [!IMPORTANT]
+> Para poder ver las demás vistas despliega el dropdown que está en el navbar o desliza hasta abajo de la página principal.
 
 ## Funcionamiento del registro de <span style="color:#48e">visitas</span>
 
