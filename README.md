@@ -1,110 +1,75 @@
-# SDS 25
+
+# SDS 25 
+
+## Descripción General
+
+Proyecto web para registrar y analizar visitas de usuarios anónimos y registrados, asegurando privacidad y anonimato.
+
+ ## Comando para iniciar el proyecto
+
+ ```bash
+ docker-compose up -d --build
+ ```
+
+ recuerda que los puertos que estan en la docker-compose deben estan libres en tu maquina local
+
+ ## Vistas del proyecto
+
+### Landing Page
+Esta es la pagina principal del proyecto donde se puede navegar a las diferentes secciones del mismo.
+- Página principal: `http://localhost:8081/mvc/public/`
+<img style="max-width: 100%;" src="mvc/public/img/docs/01.png"/>
+
+### Calendario
+Esta sección permite visualizar el calendario de SDS25.
+- Página del calendario: `http://localhost:8081/mvc/public/calendario`
+<img style="max-width: 100%;" src="mvc/public/img/docs/02.png"/>
+
+### Calendario blog
 
 
-##  Comportamiento del Sistema de Tracking de Visitas
+- Página del calendario blog: `http://localhost:8081/mvc/public/calendario_blog`
+<img style="max-width: 100%;" src="mvc/public/img/docs/03.png"/>
 
-### ¿Cómo funciona?
+> .[!NOTE].
+> Para poder ver las demas vista despliega el dropdown que esta en el navbar o desliza hasta abajo de la pagina principal.
 
-El sistema registra **UNA SOLA VISITA POR SESIÓN DEL NAVEGADOR**:
+## Funcionamiento del registro de <span style="color:#48e">visitas</span>
 
--  **Primera vez que entras**: Se registra 1 visita
--  **Navegas entre páginas** (inicio → lunes → contacto): NO se registran más visitas
--  **Cierras el navegador**: La sesión termina
--  **Vuelves a abrir el navegador**: Se registra una NUEVA visita
+Sistema web que registra una sola visita por sesión de navegador, diferenciando entre visitantes anónimos y usuarios registrados. Las visitas se asocian a un `visitor_id` único y, si el usuario se registra, a su nombre.
 
-### Tipos de visitantes
+## Estructura de Base de Datos
 
-#### 1. **Visitante Anónimo**
-- Se genera un `visitor_id` único en la sesión
-- Se registra en `tbl_visitas` sin asociar a usuario
-- Cuenta para estadísticas de "visitantes únicos"
+**tbl_usuario**: id_usuario, visitor_id, nombre, f_registro, visitas
+**tbl_visitas**: id_visita, id_usuario (FK, puede ser NULL), visitor_id, fecha
 
-#### 2. **Usuario Registrado**
-- Al llenar el formulario en "Contacto"
-- Se crea entrada en `tbl_usuario`
-- Todas sus visitas futuras se asocian a su nombre
-- Contador de visitas se incrementa con cada sesión
+## Métricas principales
 
-## 🗄️ Estructura de Base de Datos
+- Total de visitas
+- Visitantes únicos
+- Usuarios registrados
+- Visitas hoy y esta semana
 
-### Tabla: `tbl_usuario`
-```sql
-- id_usuario (PK)
-- visitor_id (identificador único de sesión)
-- nombre (único)
-- f_registro (fecha de primer registro)
-- visitas (contador automático)
-```
+## Privacidad
 
-### Tabla: `tbl_visitas`
-```sql
-- id_visita (PK)
-- id_usuario (FK, puede ser NULL si es anónimo)
-- visitor_id (identificador de sesión)
-- fecha (timestamp automático)
-```
+- No se almacenan IPs ni datos sensibles
+- visitor_id es anónimo
+- El nombre solo si el usuario lo registra
 
-## 📈 Estadísticas que se recopilan
+## Cómo probar
 
-1. **Total de visitas**: Todas las sesiones registradas
-2. **Visitantes únicos**: Cantidad de `visitor_id` diferentes
-3. **Usuarios registrados**: Personas que llenaron el formulario
-4. **Visitas hoy**: Sesiones del día actual
-5. **Visitas esta semana**: Sesiones de lunes a domingo
+1. Visita `http://localhost/public/`
+2. Navega entre páginas (solo cuenta 1 visita por sesión)
+3. Regístrate en "Contacto"
+4. Consulta estadísticas en `/estadisticas`
 
-## 🔒 Privacidad
+## Archivos clave
 
--  NO se almacenan IPs ni datos personales sensibles
--  El `visitor_id` es anónimo (hash MD5 único)
--  Solo se guarda el nombre si el usuario lo proporciona voluntariamente
--  Los datos se borran al cerrar el navegador (sesión)
-
-##  Cómo probarlo
-
-1. **Visita la página**: `http://localhost/public/`
-2. **Navega entre páginas**: Verifica que solo se cuente 1 visita
-3. **Registra tu nombre**: Ve a "Contacto" y llena el formulario
-4. **Ver estadísticas**: Accede a `/estadisticas`
-5. **Cierra el navegador**: Espera 5 segundos
-6. **Vuelve a entrar**: Ahora se contará como una nueva visita
-
-##  Archivos importantes
-
-| Archivo                      | Función                               |
-| ---------------------------- | ------------------------------------- |
-| `lib/Database.php`           | Crea BD y tablas automáticamente      |
-| `app/models/Visita.php`      | Lógica de negocio del tracking        |
-| `app/init_tracking.php`      | Sistema automático (1 vez por sesión) |
-| `app/views/contacto.php`     | Formulario de registro                |
-| `app/views/estadisticas.php` | Dashboard de métricas                 |
-
-
-## 📊 Ejemplo de flujo
-
-```
-Usuario A → Abre navegador
-         → Entra a inicio (✅ Visita #1)
-         → Va a "Lunes" (❌ No cuenta)
-         → Va a "Contacto" (❌ No cuenta)
-         → Registra nombre "Juan"
-         → Navega más (❌ No cuenta)
-         → Cierra navegador
-         
-Usuario A → Vuelve mañana
-         → Entra a inicio (✅ Visita #2)
-         → Contador de Juan: 2 visitas
-```
-
-##  Ventajas
-
--  Métricas reales y útiles
--  No infla artificialmente las visitas
--  Fácil de entender para el usuario
--  Compatible con privacidad
--  Estadísticas precisas
+- `lib/Database.php`: Crea BD y tablas
+- `app/models/Visita.php`: Lógica de tracking
+- `app/init_tracking.php`: Inicializa sistema
+- `app/views/contacto.php`: Registro de usuario
+- `app/views/estadisticas.php`: Métricas
 
 ---
-
-**Desarrollado para**: Semana de Sistemas 2025  
-**Por**: Juan Sandoval  
-**Curso**: Técnicas de Programación para Internet
+Desarrollado para Semana de Sistemas 2025 por Juan Sandoval
