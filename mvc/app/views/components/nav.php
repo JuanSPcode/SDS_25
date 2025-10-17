@@ -2,7 +2,7 @@
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
     <a href="../public/" class="flex items-center space-x-3 rtl:space-x-reverse hover:text-blue-600">
         <img src="./img/logo.png" class="h-8" alt="ASEIS Logo">
-        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white ">ASEIS</span>
+        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white ">SDS_25</span>
     </a>
     <button data-collapse-toggle="navbar-dropdown" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-dropdown" aria-expanded="false">
         <span class="sr-only">Open main menu</span>
@@ -57,8 +57,8 @@
               $visitaModel = new \app\models\Visita();
               $usuarioActual = $visitaModel->getUsuarioActual();
             if ($usuarioActual): ?>
-              <!-- Usuario registrado -->
-              <span class="block py-2 px-3 text-gray-900 rounded-sm md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500">
+              <!-- Usuario registrado - clickeable -->
+              <a href="#" class="btn-registrar-modal block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent cursor-pointer">
                 <span class="inline-flex items-center gap-2">
                   <span class="flex items-center justify-center w-6 h-6 bg-blue-600 text-white rounded-full text-xs font-bold">
                     <?php echo strtoupper(substr($usuarioActual['nombre'], 0, 1)); ?>
@@ -67,7 +67,7 @@
                     <?php echo htmlspecialchars($usuarioActual['nombre']); ?>
                   </span>
                 </span>
-              </span>
+              </a>
             <?php else: ?>
               <!-- Botón para registrarse -->
               <a href="#" id="registrar" class="btn-registrar-modal block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
