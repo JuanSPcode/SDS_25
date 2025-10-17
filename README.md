@@ -7,6 +7,9 @@
 > registre una nueva visita. Y se registran las visitas pero
 > tambien los usuarios
 
+### imagen de las tablas de la db
+<img style="max-width: 100%;" src="mvc/public/img/docs/04.png"/>
+
 ## Descripción General
 
 Proyecto web para registrar y analizar visitas de usuarios anónimos y registrados, asegurando privacidad y anonimato.
@@ -34,7 +37,7 @@ Esta sección permite visualizar el calendario de SDS25.
 ### Calendario blog
 
 
-- Página del calendario blog: `http://localhost:8081/mvc/public/calendario_blog`
+- Página del calendario blog: `http://localhost:8081/mvc/public/lunes`
 <img style="max-width: 100%;" src="mvc/public/img/docs/03.png"/>
 
 > [!IMPORTANT]
